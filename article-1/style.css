@@ -1,0 +1,298 @@
+@font-face {
+	font-family: 'Harriet Text Bold';
+	src: url('../assets/fonts/HARRIETTEXTBOLD.OTF') format('truetype');
+ }
+
+/* root definition */
+ /* mobile */
+:root{
+    --body-copy: 2vh;
+
+    --main-heading: calc(var(--body-copy) * 2.1);
+    --sub-heading: calc(var(--body-copy) * 1.05);
+    --smaller-sub-heading: calc(var(--body-copy) * 1.2);
+    --line-height: calc(var(--body-copy)*1.5);
+    --circle-size: 35vh;
+}
+
+@media (min-width: 1280px) {
+    :root{
+        --body-copy:2.5vh;
+
+        --main-heading: calc(var(--body-copy) * 4);
+        --sub-heading: calc(var(--body-copy) * 2.3);
+    }
+}
+
+@media print{
+
+        @page{
+            margin: 70px;
+        }
+    
+        :root{
+            --body-copy:12pt;
+            --page-spacing: 0.25in;
+    
+            --main-heading: calc(var(--body-copy) * 5);
+            --sub-heading: calc(var(--body-copy) * 3);
+    
+            --brand-color: white;
+        }
+    }
+
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: var(--body-copy);
+    line-height: var(--line-height);
+}
+
+strong{
+    font-weight: bold;
+}
+
+main{
+    background-color: #1E1E1E;
+    color: #FFFCFC;
+}
+
+h1 {
+    font-size: var(--main-heading);
+    font-family: 'Harriet Text Bold', sans-serif;
+    line-height: calc(var(--line-height)*2.1);
+}
+
+h2{
+    font-size: var(--sub-heading);
+    line-height: calc(var(--line-height)*1.2);
+    margin-top: 20px;
+    font-style: italic;
+}
+
+h3{
+    font-size: var(--smaller-sub-heading);
+    line-height: calc(var(--line-height)*1.25);
+    margin-top: 30px;
+    font-family: Georgia, serif;
+}
+
+
+p{
+    max-width: 60ch;
+    line-height: var(--line-height);
+    -webkit-hyphens: manual;
+    hyphens: manual;
+    margin: 20px;
+}
+
+.title{
+    color:#1E1E1E;
+    margin: 10px;
+    padding-bottom: 20px;
+    margin-top: -300px;
+    margin-left:25px;
+}
+
+.first{
+    padding-top: 20px;
+}
+
+.circle{
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    color:gray;
+}
+
+
+.circle-title{
+    background-color: #3D8AFF;
+    margin-top:10px;
+}
+
+.quote-1{
+    background-color:#3E3D3D;
+    width: calc(var(--circle-size)*0.8);
+    height: calc(var(--circle-size)*0.8);
+    margin-left: 10px;
+}
+
+.text-quote-1{
+    font-family: 'Harriet Text Bold', sans-serif;
+    color:#3D8AFF;
+    margin-left: 10px;
+    margin-top: -215px;
+    padding-bottom: 40px;
+}
+
+.quote-2{
+    background-color:#3D8AFF;
+    width: calc(var(--circle-size)*0.8);
+    height: calc(var(--circle-size)*0.8);
+    margin-left: 90px;
+}
+
+.text-quote-2{
+    font-family: 'Harriet Text Bold', sans-serif;
+    color:#FFFCFC;
+    margin-left: 10px;
+    margin-top: -175px;
+    padding-bottom: 75px;
+    text-transform: uppercase;
+    font-size: calc(var(--body-copy) * 1.2);
+}
+
+
+.quote-3 {
+    background-color: #FFFCFC;
+    width: calc(var(--circle-size)*0.65);
+    height: calc(var(--circle-size)*0.65);
+    margin-left: 49px;
+}
+
+.text-quote-3 {
+    font-family: 'Harriet Text Bold', sans-serif;
+    color: #FFFCFC;
+    margin-left: -14px;
+    margin-top: -165px;
+    padding-bottom: 39px;
+    text-transform: uppercase;
+}
+
+#mid-quote{
+   margin-left: 58px;
+   color:#1E1E1E;
+}
+
+#end-quote{
+    margin-left: 75px;
+    color:#1E1E1E;
+}
+
+.last{
+    padding-bottom: 30px;
+}
+
+/* desktop */
+@media (min-width: 1280px){
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: var(--body-copy);
+        line-height: var(--line-height);
+    }
+
+    h1 {
+        font-size: calc(var(--main-heading)*1.1);
+        font-family: 'Harriet Text Bold', sans-serif;
+        line-height: calc(var(--line-height)*3);
+        padding-bottom:20px;
+    }
+    
+    h2{
+        font-size: calc(var(--sub-heading)*0.75);
+        line-height: calc(var(--line-height)*1.5);
+        margin-top: 20px;
+        font-style: italic;
+    }
+    
+    h3{
+        font-size: calc(var(--smaller-sub-heading)*1.3);
+        line-height: calc(var(--line-height)*1.25);
+        margin-top: 30px;
+        font-family: Georgia, serif;
+    }
+
+    .title{
+        color:#1E1E1E;
+        margin: 30px;
+        padding-bottom: 80px;
+        margin-top: -450px;
+        margin-left:60px;
+    }
+
+    .circle{
+        width: calc(var(--circle-size)*2);
+        height: calc(var(--circle-size)*2);
+        border-radius: 50%;
+        color:gray;
+    }
+    
+    
+    .circle-title{
+        background-color: #3D8AFF;
+        margin-top: 35px;
+        margin-left:20px;
+    }
+
+    p{
+        max-width: 120ch;
+        line-height: var(--line-height);
+        -webkit-hyphens: manual;
+        hyphens: manual;
+        margin: 70px;
+    }
+
+    .quote-1{
+        background-color:#3E3D3D;
+        width: calc(var(--circle-size)*1.5);
+        height: calc(var(--circle-size)*1.5);
+        margin-left: 200px;
+    }
+    
+    .text-quote-1{
+        font-family: 'Harriet Text Bold', sans-serif;
+        color:#3D8AFF;
+        max-width: 65ch;
+        margin-left: 200px;
+        margin-top: -340px;
+        padding-bottom: 100px;
+        font-size: calc(var(--body-copy)*1.3);
+    }
+    
+    .quote-2{
+        background-color:#3D8AFF;
+        width: calc(var(--circle-size)*0.98);
+        height: calc(var(--circle-size)*0.98);
+        margin-left: 800px;
+    }
+    
+    .text-quote-2{
+        font-family: 'Harriet Text Bold', sans-serif;
+        color:#FFFCFC;
+        margin-left: 315px;
+        margin-top: -230px;
+        padding-bottom: 65px;
+        text-transform: uppercase;
+        font-size: calc(var(--body-copy) * 1.6);
+    }
+    
+    
+    .quote-3 {
+        background-color: #FFFCFC;
+        width: calc(var(--circle-size)*1.24);
+        height: calc(var(--circle-size)*1.24);
+        margin-left: 485px;
+    }
+    
+    .text-quote-3 {
+        font-family: 'Harriet Text Bold', sans-serif;
+        color: #FFFCFC;
+        margin-left: 342px;
+        margin-top: -280px;
+        padding-bottom: 55px;
+        text-transform: uppercase;
+        font-size: calc(var(--body-copy)*1.55);
+        max-width: 42ch;
+    }
+    
+    #mid-quote{
+       margin-left: 90px;
+       color:#1E1E1E;
+    }
+    
+    #end-quote{
+        margin-left: 120px;
+        color:#1E1E1E;
+    }
+}
