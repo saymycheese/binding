@@ -1,0 +1,308 @@
+@font-face {
+	font-family: 'Harriet Text Bold';
+	src: url('/assets/fonts/HARRIETTEXTBOLD.OTF') format('truetype');
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+:root{
+    --body-copy: 2.2vh;
+
+    --main-heading: calc(var(--body-copy) * 2.6);
+    --sub-heading: calc(var(--body-copy) * 1.3);
+    --smaller-sub-heading: calc(var(--body-copy) * 1.02);
+    --line-height: calc(var(--body-copy)*1.5);
+    --circle-size: 35vh;
+}
+
+@media (min-width: 768px) {
+    :root{
+        --body-copy:2.5vh;
+
+        --main-heading: calc(var(--body-copy) * 5.3);
+        --sub-heading: calc(var(--body-copy) * 2.3);
+    }
+}
+
+@media print{
+
+        @page{
+            margin: 70px;
+        }
+    
+        :root{
+            --body-copy:12pt;
+            --page-spacing: 0.25in;
+    
+            --main-heading: calc(var(--body-copy) * 5);
+            --sub-heading: calc(var(--body-copy) * 3);
+    
+            --brand-color: white;
+        }
+    }
+
+body{
+    background-color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: var(--body-copy);
+    line-height: var(--line-height);
+    /* width: 500px; */
+    /* height: 100vh; */
+}
+
+header{
+    margin-top: 30px;
+}
+
+
+h1{
+    font-size: var(--main-heading);
+    line-height: calc(var(--line-height)*2.75);
+    font-family: 'Harriet Text Bold';
+    margin-left: auto;
+}
+
+h2{
+    font-size: var(--sub-heading);
+    line-height: calc(var(--line-height)*1.5);
+    margin-top: 20px;
+    font-style: italic;
+}
+
+h3{
+    font-size: var(--smaller-sub-heading);
+    line-height: calc(var(--line-height)*1.25);
+    margin-top: 20px;
+}
+
+p{
+    max-width: 38ch;
+    line-height: var(--line-height);
+    margin-top:20px;
+    /* margin-left: auto; */
+    margin-right: auto;
+    /* hyphens: manual;
+    word-break: break-all; */
+}
+
+em{
+    font-style: italic;
+}
+
+a{
+    text-decoration: underline;
+    color: rgb(115, 115, 115);
+}
+
+a:hover{
+    color: #00ffe1;
+}
+
+
+.scroll {
+    display:inline;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* margin: 5vw */
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+
+.circle{
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+}
+
+.circle-title{
+    background-color: #3D8AFF;
+    margin-top: 2vh;
+    left: 15px;
+}
+
+.card{
+    flex: 0 0 auto;
+    margin-right: 2vh;
+    margin-left: 2vh;
+    max-width:100vw;
+
+}
+
+.title{
+    margin-top: -310px;
+    margin-left: 2vh;
+}
+
+.article-1{
+    padding-top:30px;
+    margin-left:35vw;
+}
+
+.article-2{
+    padding-top: 227px;
+    margin-left: 6vw;
+    padding-bottom: 30px;
+}
+
+.article-3{
+    padding-top: 334px;
+    margin-left:15vw;
+    margin-right: 1vw;
+    padding-bottom:60px;
+}
+
+.circle-1{
+    background-color: #3D8AFF;
+    width: calc(var(--circle-size)*0.4);
+    height: calc(var(--circle-size)*0.4);
+    margin-top: -74vw;
+    margin-left: 13vw;
+}
+
+.circle-2{
+    background-color: #FFD84E;
+    width: calc(var(--circle-size)*0.4);
+    height: calc(var(--circle-size)*0.4);
+    margin-top: -111vw;
+    margin-left: -4vw;
+}
+
+.circle-3{
+    background-color: #FF5252;
+    width: calc(var(--circle-size)*0.4);
+    height: calc(var(--circle-size)*0.4);
+    margin-top: -185vw;
+    margin-left: 9vw;
+}
+
+@media (min-width: 768px) {
+    header{
+        margin-top: 30px;
+    }
+    
+    
+    h1{
+        font-size: var(--main-heading);
+        line-height: calc(var(--line-height)*4);
+        font-family: 'Harriet Text Bold';
+        margin-left: auto;
+    }
+    
+    h2{
+        font-size: var(--sub-heading);
+        line-height: calc(var(--line-height)*1.5);
+        margin-top: 20px;
+        font-style: italic;
+    }
+    
+    h3{
+        font-size: var(--smaller-sub-heading);
+        line-height: calc(var(--line-height)*1.25);
+        margin-top: 20px;
+    }
+    
+    p{
+        max-width: 80ch;
+        line-height: var(--line-height);
+        margin-top:20px;
+        /* margin-left: auto; */
+        margin-right: auto;
+        /* hyphens: manual;
+        word-break: break-all; */
+    }
+    
+    em{
+        font-style: italic;
+    }
+    
+    a{
+        text-decoration: underline;
+        color: rgb(115, 115, 115);
+    }
+    
+    a:hover{
+        color: #00ffe1;
+    }
+    
+    
+    .scroll {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+    }
+    
+    main{
+            display: flex;
+            flex-direction: row;
+            margin-top: 13vh;
+            gap: 8vh;
+            position:relative;
+    }
+    
+    .circle{
+        width: var(--circle-size);
+        height: var(--circle-size);
+        border-radius: 50%;
+        mix-blend-mode: multiply;
+    }
+    
+    .circle-title{
+        width: calc(var(--circle-size)*2.5);
+        height: calc(var(--circle-size)*2.5);
+        background-color: #FFE600;
+        top: 6vh;
+        padding-bottom:7vh;
+        left: 35px;
+        mix-blend-mode: multiply;
+    }
+    
+    .card{
+        flex: 0 0 auto;
+        margin-right: 2vh;
+        margin-left: 2vh;
+        max-width:100vw;
+    
+    }
+    
+    .title{
+        margin-top: 50px;
+        margin-left: 2vh;
+    }
+
+    .article-1{
+        padding-top:30px;
+        margin-left:35vw;
+    }
+    
+    .article-2{
+        padding-top: 0px;
+        margin-left: 6vw;
+        padding-bottom: 0px;
+    }
+    
+    .article-3{
+        padding-top: 0px;
+        margin-left:15vw;
+        margin-right: 1vw;
+        padding-bottom:60px;
+    }
+
+    .circle-1{
+        display: none;
+        
+    }
+    
+    .circle-2{
+        display: none;
+    }
+    
+    .circle-3{
+        display: none;
+    }
+}
