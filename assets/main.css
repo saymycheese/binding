@@ -380,15 +380,17 @@ main{
 
     .quote-1{
         font-family: 'Harriet Text Bold';
-        font-size: calc(var(--body-copy)*1.75);
-        margin-left: -80vw;
+        font-size: calc(var(--body-copy)*1.4);
+        margin-left: -90vw;
         mix-blend-mode:difference;
+        margin-top: 1vw;
     }
 
     .image-1{
         margin-left:-80vw;
-        margin-top: 15vw;
+        margin-top: -1vw;
         mix-blend-mode: difference;
+        transform: scale(0.8);
 
     }
 
