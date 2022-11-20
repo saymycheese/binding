@@ -119,7 +119,6 @@ main{
 }
 
 .circle-sticky{
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: -1;
@@ -150,8 +149,8 @@ main{
 .intro{
     margin-bottom:22vw;
 }
-/* 
-.intro-slide{
+
+/* .intro-slide{
     background-color:aqua;
 } */
 
@@ -201,7 +200,7 @@ main{
 
 .circle-1{
     padding-bottom: 7vh;
-    margin-top: 30vh;
+    margin-top: 27vh;
     /* margin-left: 165vw; */
 }
 
@@ -239,6 +238,7 @@ main{
 
 .header-article-1{
     margin-left: 30vw;
+    margin-top: 20vw;
 }
 
 .mobile-scroll-inner-1{
@@ -250,7 +250,6 @@ main{
 }
 
 .mobile-scroll-outer-1{
-    /* width: 100vh; */
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
@@ -266,6 +265,7 @@ main{
     display:none;
   }
 
+  /* laptop */
 @media (min-width: 768px) {
 
     body{ 
@@ -278,13 +278,14 @@ main{
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
+        overflow-y: hidden;
     }
-        main{
+
+    main{
         display: flex;
         flex-direction: row;
         margin-top: 13vh;
         gap: 8vh;
-
     }
 
     .intro-slide{
@@ -432,6 +433,23 @@ main{
         margin-left: 30vw;
     }
 
+    .mobile-scroll-outer-1{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: auto;
+        transform: none;
+    }
+
+    .mobile-scroll-inner-1{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: auto;
+        transform: none;
+
+    }
+
 }
     
 @media print{
@@ -488,15 +506,4 @@ main{
         text-decoration: none;
     }
 
-    .print-margin{
-        margin-top: 30px;
-    }
-
-    #dress-quote{
-        margin-top: 30px;
-    }
-
-    /* .ending{
-        margin-top: 40px;
-    } */
     }
