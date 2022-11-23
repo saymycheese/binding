@@ -317,6 +317,7 @@ main{
 
     .card{
         flex: 0 0 auto;
+        margin: 5vw;
     }
 
     .circle{
@@ -344,7 +345,7 @@ main{
         margin-right: 10vh;
         height: 100vh;
         margin-top: 5vw;
-        margin-left: -93vh;
+        margin-left: -84vh;
     }
 
     .intro{
@@ -358,6 +359,7 @@ main{
     .article-1{
         max-width: 53ch;
         margin-left: 31vw;
+        margin-top:-5vw;
     }
 
     .circle-article-1{
@@ -409,6 +411,7 @@ main{
     .circle-anchor{
         width: calc(var(--circle-size)*2);
         height: calc(var(--circle-size)*2);
+        z-index: -1;
     }
 
     .quote-1{
@@ -425,9 +428,33 @@ main{
 
     }
 
-    .header-article-1{
-        margin-left: 30vw;
+    .circle-header-article-1{
+        background-color: #3D8AFF;
+        margin-top: -48vw;
+        padding-bottom: 7vw;
+        margin-left: 28vw;
     }
+
+    .title-gallery{
+        margin-left: 20vw;
+    }
+
+    .header-article-1{
+        margin-left: 49vw;
+        margin-top: -57vw;
+    }
+
+    .header-article-1 h1{
+        font-size: calc(var(--main-heading)*0.7);
+        line-height: calc(var(--line-height)*2);
+        font-family: 'Harriet Text Bold';
+        margin-left: auto;
+    }
+
+    .header-article-1 .card{
+        max-width: 100vw;
+    }
+
 
 }
     

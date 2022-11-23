@@ -107,7 +107,7 @@ p{
 
 
 .circle-title{
-    background-color: #3D8AFF;
+    background-color: #FF5E5E;
     margin-top:10px;
 }
 
@@ -205,10 +205,10 @@ p{
 
     .title{
         color:#1E1E1E;
-        margin: 30px;
-        padding-bottom: 19vh;
-        margin-top: -450px;
-        margin-left:60px; 
+        margin: 10px;
+        padding-bottom: 9vw;
+        margin-top: -35vw;
+        margin-left: 4vw;
     }
 
     .circle{
@@ -219,8 +219,7 @@ p{
     
     
     .circle-title{
-        background-color: #3D8AFF;
-        margin-top: 35px;
+        background-color: #FF5E5E;
         margin-left:20px;
     }
 
@@ -232,9 +231,11 @@ p{
         margin-left: 7vw;
         margin-top:4vw;
     }
+
     .first{
         padding-top:3vw;
     }
+
     .quote-1{
         background-color:#3E3D3D;
         width: calc(var(--circle-size)*1.5);
