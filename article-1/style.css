@@ -6,7 +6,7 @@
 /* root definition */
  /* mobile */
 :root{
-    --body-copy: 2vh;
+    --body-copy: 2.2vh;
 
     --main-heading: calc(var(--body-copy) * 2.1);
     --sub-heading: calc(var(--body-copy) * 1.05);
