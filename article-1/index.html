@@ -19,7 +19,14 @@
 		</div>
 
 		<main>
-			<div class ="first">
+			<div id="navbar">
+				<a href="/index.html">Introduction</a>
+				<a class="active" href="javascript:void(0)">Ellison</a>
+				<a href="/article-2/">Chimero</a>
+				<a href="/article-3/">Casey</a>
+			  </div>
+			  
+			<div id="first">
 			<p>
 				It’s not till you’re older that you realize kids are repositories for half-truths. They’re told the most extra&shy;ordinary things. You could be president some day. You could compete in the Olympics. Grown-ups dispense these fantasies with earnest hope, knowing that the chances of their child fulfilling such a goal are very slim.
 			</p>
@@ -71,9 +78,12 @@
 			<blockquote>
 				<div class="circle quote-3"></div>
 				<div class="text-quote-3">
-					<p>The <span style="color:#3D8AFF">simple (and local)</span> answer
-					<span id="mid-quote">is sometimes the</span>
-					<br><span id="end-quote">right answer</span></p>
+					<span id="screen-quote">
+						<p>The <span style="color:#3D8AFF">simple (and local)</span> answer
+						<span id="mid-quote">is sometimes the</span>
+						<br><span id="end-quote">right answer</span></p>
+					</span>
+					<p id="print-quote">The simple (and local) answer is sometimes the right answer</p>
 				</div>
 			</blockquote>
 				
@@ -84,6 +94,22 @@
 					For designers, it is important to <strong>look at the problems</strong> and resources at hand <strong>without getting lost</strong> in fantasies of global healing powers. It is this sort of humility that Caplan emphasizes: “...I have claimed that design solves problems. It often does. But when we call designers problem solvers, the connotations are very grand…It helps to remember that, <strong>to a person hungry for scrambled eggs, a short-order cook is a problem solver.” </strong>
 				</p>
 			</div>
+
+			<script>
+				window.onscroll = function() {myFunction()};
+				
+				var navbar = document.getElementById("navbar");
+				var sticky = navbar.offsetTop;
+				
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				  } else {
+					navbar.classList.remove("sticky");
+				  }
+				}
+				</script>
+
 		</main>
 	</div>	
 	</body>

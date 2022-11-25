@@ -11,14 +11,22 @@
 		<div class="circle circle-title"></div>
 		<div class="title">
 			<header>
-				<h1>Everything Easy is Hard Again</h1>
+				<h1>Everything Easy
+					<br>is Hard Again</h1>
 				<h2>This talk was given on October 12, 2017 at Mirror Conf in Braga, Portugal, and again on February 9, 2018 at the Awwwards Conference in Berlin.</h2>
 				<h3>Frank Chimero | Feb 2018</h3>
 			</header>
 		</div>
 
 		<main>
-			<div class ="first">
+			<div id="navbar">
+				<a href="/index.html">Introduction</a>
+				<a href="/article-1/">Ellison</a>
+				<a class="active" href="javascript:void(0)">Chimero</a>
+				<a href="/article-3/">Casey</a>
+			  </div>
+
+			<div id="first">
 				<p>
 					This past summer, I gave a lecture at a web conference and afterward got into a fascinating conversation with a young digital design student. It was fun to compare where we were in our careers. I had fifteen years of experience designing for web clients, she had one year, and yet some how, we were in the same situation: we enjoyed the work, but were utterly confused and overwhelmed by the rapidly increasing complexity of it all. <strong>What the hell happened?</strong> <em>(That’s a rhetorical question, of course.)</em>
 				</p>
@@ -78,6 +86,8 @@
 				<div class="text-quote-2-3">
 					<p>but I am <span style="color:grey">still</span> at my desk</p>
 				</div>
+
+				<span id="print-quote-2"> Everything is different now <br>but I am still at my desk</span>
 			</blockquote>
 
 			<p>
@@ -136,7 +146,7 @@
 				<div class="circle quote-4"></div>
 				<div class="text-quote-4">
 					<p class="code-title">{ display: flex; }</p>
-					<p>I was saved by Flexbox after five years of guess work. It is my baby.</p>
+					<p id="print-quote-4">I was saved by Flexbox after five years of guess work. It is my baby.</p>
 					<p>I was trained as a print designer, and with flexbox, I can type 3 or 4 lines of CSS, and have two blocks of text line up at the baseline. Hallelujah. I only needed to wait a decade to get this.</p>
 				</div>
 			</blockquote>
@@ -180,6 +190,10 @@
 					<p>A person needs to revise their whole frame of thinking;
 						<br>they must change their mind.</p>
 				</div>
+				<span id="print-quote-6">
+					<p>A person needs to revise their whole frame of thinking;
+						<br>they must change their mind.</p>
+				</span>
 			</blockquote>
 
 			<p>
@@ -225,6 +239,12 @@
 				<div class="text-quote-9">
 					<p>performant, scalable images</p>
 				</div>
+
+				<ul id="print-quote-789">
+					<li> simple, responsive layout</li>
+					<li> web fonts and nicely set text</li>
+					<li> performant,scalable images</li>	
+				</ul>
 			</blockquote>
 
 			<p>
@@ -275,7 +295,7 @@
 			</p>
 
 			<p>
-				I wonder what young designers think of this situation and how they are educating themselves in a complicated field. How do they learn if the code is illegible? Does it seem like more experienced people are pulling up the ladder of opportunity by doing this? Twenty years ago, I decided to make my own website, because I saw an example of HTML and I could read it. Many of my design peers are the same. We possess skills to make websites, but we stopped there. We stuck with markup and never progressed into full-on programming, because we were only willing to go as far as things were legible.
+				I wonder what young designers think of this situation and how they are educating themselves in a complicated field. How do they learn if the code is illegible? Does it seem like more experienced people are pulling up the ladder of opportunity by doing this? Twenty years ago, I decided to make my own website, because I saw an example of HTML and I could read it. Many of my design peers are the same. We possess skills to make websites, but we stopped there. We stuck with markup and never progressed into full-on programming, because we were only willing to go as far as things <span style="white-space: nowrap;">were legible.</span>
 			</p>
 			
 			<p>
@@ -321,6 +341,21 @@
 					It’s by keeping our work legible that we keep the door open to the next generation of our co-workers. What works for them also works for us, because whether you are just out of school or have twenty years of experience, you’ll eventually end up in the same spot: <strong>your first year of making websites.</strong>
 				</p>
 			</div>
+
+			<script>
+				window.onscroll = function() {myFunction()};
+				
+				var navbar = document.getElementById("navbar");
+				var sticky = navbar.offsetTop;
+				
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				  } else {
+					navbar.classList.remove("sticky");
+				  }
+				}
+				</script>
 		</main>
 	</div>	
 	</body>

@@ -15,12 +15,16 @@
     --circle-size: 35vh;
 }
 
+html, body{
+    scroll-behavior: smooth;
+}
+
 @media (min-width: 1280px) {
     :root{
         --body-copy:2.5vh;
 
         --main-heading: calc(var(--body-copy) * 6);
-        --sub-heading: calc(var(--body-copy) * 1.5);
+        --sub-heading: calc(var(--body-copy) * 1.4);
         --smaller-sub-heading: calc(var(--body-copy) * 2);
         --circle-size: 70vh;
     }
@@ -101,8 +105,8 @@ p{
     margin-left:25px;
 }
 
-.first{
-    padding-top: 20px;
+#first{
+    padding-top: 15vw;
 }
 
 .circle{
@@ -203,6 +207,10 @@ p{
     font-size: calc(var(--body-copy) * 1.2);
 }
 
+#print-quote-2{
+    display: none;
+}
+
 
 .code{
    margin-left: 5vw;
@@ -290,6 +298,10 @@ p{
 
 }
 
+#print-quote-6{
+    display:none;
+}
+
 .quote-7 {
     background-color: #767676;
     width: calc(var(--circle-size)*0.2);
@@ -348,6 +360,10 @@ p{
     max-width: 10ch;
 }
 
+#print-quote-789{
+    display:none;
+}
+
 .quote-10 {
     background-color: #767676;
     width: calc(var(--circle-size)*0.9);
@@ -392,6 +408,36 @@ p{
     padding-bottom: 30px;
 }
 
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 4.35vw;
+    text-decoration: none;
+    font-size: calc(var(--body-copy) * 1);
+     }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #FFD84E;
+    color: white;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    background-color: #1E1E1E;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
 /* desktop */
 @media (min-width: 1280px){
     body{
@@ -403,13 +449,14 @@ p{
     h1 {
         font-size: var(--main-heading);
         font-family: 'Harriet Text Bold', sans-serif;
-        line-height: calc(var(--line-height)*5);
+        line-height: calc(var(--line-height)*4.2);
     }
     
     h2{
         font-size: var(--sub-heading);
         line-height: calc(var(--line-height)*2);
         margin-top: 3vw;
+        font-family: Helvetica, sans-serif;
         font-style: italic;
     }
     
@@ -432,13 +479,13 @@ p{
     
     .title{
         color: #1E1E1E;
-        margin: 10px;
+        margin: 2vw;
         padding-bottom: 4vw;
-        margin-top: -35vw;
-        margin-left: 2vw;
+        margin-top: -37vw;
+        margin-left: 4vw;
     }
     
-    .first{
+    #first{
         padding-top: 7vw;
     }
     
@@ -537,6 +584,10 @@ p{
         margin-top: -15vw;
         padding-bottom: 13vw;
         font-size: calc(var(--body-copy) * 1.6);
+    }
+
+    #print-quote-2{
+        display: none;
     }
     
     
@@ -639,6 +690,10 @@ p{
         mix-blend-mode: exclusion;
     
     }
+
+    #print-quote-6{
+        display:none;
+    }
     
     .quote-7 {
         background-color: #767676;
@@ -696,7 +751,11 @@ p{
     .text-quote-9 p{
         max-width: 30ch;
     }
-    
+
+    #print-quote-789{
+        display:none;
+    }
+
     .quote-10 {
         background-color: #767676;
         width: calc(var(--circle-size)*0.65);
@@ -740,4 +799,222 @@ p{
     .last{
         padding-bottom: 4vw;
     }
+
+    #navbar {
+        overflow: hidden;
+        background-color: #333;
+        font-family: Georgia, serif;
+      }
+      
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 9.4vw;
+        text-decoration: none;
+        font-size: calc(var(--body-copy) * 1.1);
+          }
+      
+      #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      #navbar a.active {
+        background-color: #FFD84E;
+        color: white;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      .sticky + .content {
+        padding-top: 60px;
+      }
+}
+
+@media print{
+
+    .circle{
+        display: none;
+    }
+
+ 
+    .circle-title{
+        display: block;
+        width: 350px;
+        height: 350px;
+        top: 0px;
+        left: 10px;
+    }
+
+    .title{
+        padding-top: 100px;
+    }
+
+    #navbar{
+        display: none;
+    }
+
+    main{
+        background-color: white;
+        color: black;
+    }
+
+    #first{
+        margin-top:-100px;
+    }
+
+    h1{
+        font-size: 55pt;
+        line-height: 60pt;
+        margin-left: -1px;
+        margin-top: -20px;
+    }
+
+    h2{
+        font-size: 18px;
+        line-height: 40pt;
+        margin-left: -1px;
+        margin-right: 10px;
+        margin-top: 40px;
+    }
+
+    h3{
+        margin-top: 20px;
+        margin-left: -1px;
+    }
+
+    p{
+        font-size: 12pt;
+        max-width: 70ch;
+        margin-top: 30px;
+        color: black;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    blockquote{
+        display: block;
+        font-size: 18pt;
+        line-height: 22pt;
+        max-width: 55ch;
+        margin-top: 700px;
+        margin-left: 40px;
+        margin-bottom: -50px;
+    }
+    
+    .text-quote-1{
+        margin-top: -660px;
+    }
+
+    #print-quote-2{
+        display: block;
+        font-family: 'Harriet Text Bold', sans-serif;
+        margin-left: 100px;
+        margin-top: -670px;
+        margin-bottom: 100px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    .text-quote-2-1{
+        display: none;
+    }
+    
+    .text-quote-2-2{
+        display: none;
+    }
+    
+    .text-quote-2-3{
+        display: none;
+    }
+
+    .code-title{
+        color: black;
+        margin-bottom: -40px;
+    }
+
+    .text-quote-3{
+        margin-left: -30px;
+        margin-top: -650px;
+    }
+
+    .text-quote-4{
+        margin-left: -30px;
+        margin-top: -770px;
+    }
+
+    #print-quote-4{
+        margin-bottom: -40px;
+    }
+
+    .text-quote-5{
+        margin-top: -770px;
+    }
+
+    .text-quote-6{
+        display:none
+    }
+
+    #print-quote-6{
+        display: block;
+        color: black;
+        margin-left: -30px;
+        margin-top: -670px;
+        margin-bottom: 80px;
+        font-family: 'Harriet Text Bold', sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    #print-quote-789{
+        display: block;
+        color: black;
+        margin-left: 60px;
+        margin-top: -690px;
+        margin-bottom: 80px;
+        font-family: 'Harriet Text Bold', sans-serif;
+        font-size: 15px;
+    }
+    
+    li {
+        display: list-item;
+        color: black;
+        list-style-type: disc;
+    }
+
+    .text-quote-7{
+        display:none
+    }
+
+    .text-quote-8{
+        display:none
+    }
+
+    .text-quote-9{
+        display:none
+    }
+
+    .text-quote-10{
+        margin-top: -670px;
+        margin-bottom: -160px;
+    }
+
+    .text-quote-10 span{
+        color: black !important;
+    }
+
+    .text-quote-11{
+        margin-top: -670px;
+        margin-bottom: -160px;
+    }
+
 }
