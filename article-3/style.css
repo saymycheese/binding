@@ -316,6 +316,7 @@ h4{
         font-size: calc(var(--smaller-sub-heading)*1.3);
         line-height: calc(var(--line-height)*1.25);
         margin-top: 30px;
+        padding-bottom:2vw;
         font-family: Georgia, serif;
     }
 
