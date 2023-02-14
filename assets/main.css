@@ -158,7 +158,7 @@ main{
 
 .article-intro{
     margin-left: -18vw;
-    margin-top: -108vw;
+    margin-top: 31vw;
     margin-right: -10vw;
 }
 
@@ -389,7 +389,7 @@ main{
 #image-gallery-3{
     height: 100%;
     width: 100%;
-    transform: rotate(90deg) scale(2.4);
+    transform: rotate(90deg) scale(1.8);
 }
 
 .circle-3 {
@@ -561,7 +561,7 @@ main{
     .circle-1{
         padding-bottom: 7vh;
         margin-top: -7vh;
-        margin-left: 250vw;
+        margin-left: 180vw;
     }
 
     .circle-anchor{
@@ -602,7 +602,7 @@ main{
     }
 
     .article-intro{
-        margin-left: -35vw;
+        margin-left: 15vw;
         margin-top: 6vw;
     }
 
@@ -657,7 +657,7 @@ main{
     .quote-1{
         font-family: 'Harriet Text Bold', serif;
         font-size: calc(var(--body-copy)*1.75);
-        margin-left: -95vw;
+        margin-left: -15vw;
         mix-blend-mode: difference;
         transform: rotate(0deg)
     }
@@ -683,7 +683,7 @@ main{
     .title-gallery{
         display: flex;
         flex-direction: row;
-        /* margin-left: 20vw; */
+        margin-left: -100vw;
     }
 
     .header-article-1{
